@@ -1,0 +1,77 @@
+#hardstatus lastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
+
+termcapinfo xterm*|linux*|rxvt*|Eterm* OP
+
+termcapinfo xterm|xterms|xs|rxvt ti@:te@
+
+defnonblock 5
+
+shelltitle '@|'
+
+startup_message off
+
+#term screen-256color
+
+vbell off
+
+
+# scrollback buffer size
+
+defscrollback 30000
+
+
+# so it won't seem like there is a delay when entering copy mode
+
+msgminwait 0
+
+
+# make search case-insensitive
+
+ignorecase on
+
+
+# Enable mouse scrolling and scroll bar history scrolling
+
+termcapinfo xterm* ti@:te@
+
+
+# fix vim/less clobbering screen after exit
+
+altscreen on
+
+
+# detach on hangup
+
+autodetach on
+
+
+# Activity message
+
+activity "Activity in %t(%n)"
+
+
+# Statusline at the bottom
+
+attrcolor b ".I"
+
+hardstatus alwayslastline
+
+hardstatus string '%{= Kd} %{= Kd}%-w%{= Kr}[%{= KW}%n %t%{= Kr}]%{= Kd}%+w %-= %{KG} %H%{KW}|%{KY}%101`%{KW}|%D %M %d %Y%{= Kc} %c:%s%{-}'
+
+sorendition kw
+
+
+# Hide hardstatus: ctrl-a f
+
+bind f eval "hardstatus ignore"
+
+# # Show hardstatus: ctrl-a F
+
+bind F eval "hardstatus alwayslastline"
+
+
+# Create the windows
+
+screen -t
+
+select 0
