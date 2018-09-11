@@ -1,0 +1,16 @@
+builds/D370-1076-0100/5.0.0/active/src/rpscomm/Releases/Rel.2_1/Libs/NCRIO/NCRSerialIO/tests/src/TestNCRIOChannel.cpp:115:25: error: ‘NCRConfigData’ is not a class or namespace
+   NCRConfigData* pcfg = NCRConfigData::GetInstance();
+                         ^
+In file included from /usr/include/cppunit/TestCase.h:6:0,
+                 from /usr/include/cppunit/TestCaller.h:5,
+                 from /usr/include/cppunit/extensions/HelperMacros.h:9,
+                 from /builds/D370-1076-0100/5.0.0/active/src/rpscomm/Releases/Rel.2_1/Libs/NCRIO/NCRSerialIO/tests/src/TestNCRIOChannel.cpp:2:
+/builds/D370-1076-0100/5.0.0/active/src/rpscomm/Releases/Rel.2_1/Libs/NCRIO/NCRSerialIO/tests/src/TestNCRIOChannel.cpp:126:58: error: expected primary-expression before ‘)’ token
+   CPPUNIT_ASSERT(io_mgr->GetIOChannel((ANCRConfigDataKey*)NULL, pCallback) == (INCRIOChannel*)0);
+                                                          ^
+/builds/D370-1076-0100/5.0.0/active/src/rpscomm/Releases/Rel.2_1/Libs/NCRIO/NCRSerialIO/tests/src/TestNCRIOChannel.cpp: In member function ‘void TestNCRIOChannel::TestSerialIOChannel()’:
+/builds/D370-1076-0100/5.0.0/active/src/rpscomm/Releases/Rel.2_1/Libs/NCRIO/NCRSerialIO/tests/src/TestNCRIOChannel.cpp:243:22: error: ‘pKey’ was not declared in this scope
+   ANCRConfigDataKey* pKey;
+                      ^
+/builds/D370-1076-0100/5.0.0/active/src/rpscomm/Releases/Rel.2_1/Libs/NCRIO/NCRSerialIO/tests/src/TestNCRIOChannel.cpp:246:22: error: ‘pIOKey’ was not declared in this scope
+   ANCRConfigDataKey *pIOKey;
